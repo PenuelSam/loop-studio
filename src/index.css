@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.scale:hover {
+    opacity: 0.4;
+    color: black;
+}
+
+.hero{
+    background-image: url('../src/images/desktop/image-hero.jpg');
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 768px)  {
+    .hero {
+        background-image: url('../src/images/mobile/image-hero.jpg') ;
+    }
+}
